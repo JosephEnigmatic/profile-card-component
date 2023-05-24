@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: var(--dark-cyan);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: top -50% right -20%, bottom -50% right -20%;
+    min-height: calc(100vh - 0.1px);
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+.card-container {
+    background-color: var(--white);
+    width: calc(100% - 2rem);
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.card-images {
+    position: relative;
+}
+
+.card-images .user-images {
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    bottom: -3rem;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 5px solid var(--white);
+}
+
+.card-names {
+    padding: 4rem 2rem 2.5rem 2rem;
+}
+
+.card-names h1 {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+span {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--dark-grayish-blue);
+}
+
+.card-stats {
+    border-top: 1px solid var(--dark-gray);
+    padding: 1rem 2rem;
+}
+
+.card-stats ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-stats li {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.card-stats span {
+    display: block;
+}
